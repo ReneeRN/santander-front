@@ -4,6 +4,8 @@
 
 body {
     background-color: #fffbf7;
+    margin: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -19,25 +21,28 @@ p {
 }
 
 .header {
-margin: 40px 20px 0 20px;
+margin: 5px 20px 10px 20px;
 font-size: 0%;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .fixed-header {
-background-color: white;
+background-color: #fffbf7;
 width: 100%;
 position: fixed;
 z-index: 1;
+vertical-align: center;
 top: 0;
 left: 0;
 right: 0;
+margin-top: 0;
+height: 70px;
 }
 
 .header > * {
   display: inline-block;
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
   vertical-align: middle;
   height: 100%;
   line-height: 45px;
@@ -48,7 +53,7 @@ right: 0;
 }
 
 .logo > img {
-  height: 100%;
+  height: 120%;
 }
 
 li {
@@ -57,13 +62,13 @@ li {
   margin-left: 25px;
 }
 
-.navbar {
+/* .navbar {
   width: 70%;
   text-align: center;
   color: #025157;
   font-weight: 500;
   line-height: 45px;
-}
+} */
 
 .actions {
   width: 15%;
@@ -75,6 +80,8 @@ li {
 .actions > * {
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .actions a {
@@ -84,34 +91,42 @@ li {
 .actions button {
   color:#fff;
   background-color: #67b54b;
-  padding: 12px 14px;
+  font-size: 15px;
+  padding: 15px 25px;
   border: 0;
   border-radius: 5px;
 }
 
 main {
 text-align: center;
+margin: 0px;
 }
 
-.form .actions {
-  width: 105%;
+
+.publish > form > div {
+  width: 90%;
   text-align: center;
   font-size: 14px;
+  }
+  
+.publish > form > * {
+  margin: 20px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
   
-.form .actions > * {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-  
-.form button {
+.publish > form > div > button {
   color: #fff;
-  background-color: #025157;
+  background-color: darkcyan;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 
 .promo {
  display: flex;
- width: 70%;
+ width: 80%;
  margin: 100px auto;
  align-items: center;
 }
@@ -122,95 +137,62 @@ text-align: center;
  align-items: center;
 }
   
-  .explanatory-video img {
+.explanatory-video img {
     width: 120px;
     margin-top: 10px;
   }
   
-  .publish {
-    /* container styles if any */
-    margin-left: 20px;
+.explanatory-text {
+    margin: 20px;
   }
   
-  .publish h3 {
+.explanatory-text h3 {
     font-family: "Alegreya", serif;
     font-size: 40px;
     line-height: 48px;
     color: #025157;
+    text-align: left;
   }
   
-  .publish > p {
+  .explanatory-text > p {
     font-size: 16px;
     color: #343434;
-    line-height: 1.5;
+    line-height: 1.4;
     margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
-  .publish > form {
+  .explanatory-text > form {
     display: flex;
+    flex-direction: column;
   }
   
-  .publish > form p {
+  .explanatory-text > form  p {
     color: #025157;
     margin-right: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-.pws3 {
-  background-color: #a1d683;
-  padding: 5% 15%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+.explanatory-text > form input {
+    color: #fff;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  } 
 
-.growing {
-  flex: 2;
-  padding-right: 100px;
-}
-
-
-.pws3 .growing h3 {
-  font-family: "Alegreya", serif;
-  font-size: 51px;
-  line-height: 61px;
-  color: #025157;
-}
-
-
-.pws3 .growing p {
-  color: #343434;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.whouses button{
-  font-size: 14px;
-  padding: 12px 12px 6px 12px;
-  border-radius: 8px;
-  border: 0;
-  height: 45px;
-  font-weight: 600;
-  margin-left: 0;
-  color: white;
-  background-color: teal solid;
-
-}
-
-.pws3 .growing img {
-  width: 600px;
-  max-width: 100%;
-}
-.pws3 .pws3card {
-  position: static;
-  flex: 1;
-  padding-right: 10px;
-  flex-flow: column;
-  background-color: white;
-  padding: 0;
-  border: 10px;
-}
-
+  .explanatory-text > form button {
+    color: #fff;
+    background-color: darkcyan;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  } 
 
 .features {
       display: grid;
@@ -228,7 +210,7 @@ text-align: center;
   }
   .feature-cards {
     display: grid;
-    height: 900px;
+    height: 800px;
     padding: 5% 10%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -241,9 +223,7 @@ text-align: center;
     background-color: #fff;
     border: #fff;
     border-radius: 5px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 10px;
     overflow: hidden;
 }
 
@@ -252,36 +232,289 @@ text-align: center;
     flex: 2;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 30px 40px 40px;
+    padding: 20px 10px 40px 40px;
 }
 
 .card-image {
-    width: 40%;
+    width: 50%;
     position: relative;
-    z-index: 1;
     height: 70%;
-    right: -10px;
+    right: -20px;
+    top: -15px
 }
+
+.card-image-image img {
+  max-height: 300px;
+}
+
 .icon {
     width: 50px;
 }
 
-.card-image .card-image-image {
-    margin-top: 0;
-    height: 100px;
+.card-text a {
+  color: #67b54b
+}
+
+.pws3 {
+  background-color: #a1d683;
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.growing {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding-right: 100px;
+}
+
+.pws3 .growing h3 {
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+
+.pws3 .growing p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.growing button{
+  color: #fff;
+  background-color: darkcyan;
+  border: 0;
+  border-radius: 8px;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  width: 200px;
+}
+
+.pws3 .growing img {
+  width: 900px;
+  max-width: 100%;
+}
+
+.pws3 .pws3card {
+  position: static;
+  max-width: 399px;
+  max-height: 900px;
+  flex: 1;
+  padding-right: 10px;
+  flex-flow: column;
+  background-color: white;
+  background-clip: border-box;
+  padding: 0;
+  border: 10px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.pws3card .cardimg figure > img {
+  margin: 0;
+  padding: 0;
+position: relative;
+left:-40px;
+top: -15px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+
+.pws3card .cardlogo {
+  background-color: orange;
+  height: 150px;
+  width: 150px;
+  max-height: 100%;
+  margin: 0;
+  padding: 10%;
+position: relative;
+right: -150px;
+top: -190px;
+border-radius: 100%;
+}
+
+.pws3card .cardlogo > img {
+  max-width: 200px;
+  position: relative;
+  bottom: -35px;
+  left: -25px;
+}
+
+.pws3card .cardtext > * {
+  font-size: 50px;
+  position: relative;
+  top: -230px;
+  padding: 0 15px 0 15px;
+}
+
+.pws3card .cardtext > p {
+  font-size: 18px;
+  top: -280px;
+
+}
+
+.pws3card .cardnotes > * {
+  position: relative;
+  top: -270px;
+  right: -110px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  width: 60%;
+  text-align: left;
+}
+
+.pws3card .cardnotes > img {
+width: 30px;
+}
+
+.pws3card .cardbutton button {
+  position: relative;
+  top: -250px;
+  right: -100px;
+  color: #fff;
+  background-color: darkcyan;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.pws4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+}
+  
+.pws4 h2 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #025157;
+  margin-bottom: 10px;
+}
+
+.pws4 p {
+  margin-top: 5px;
+  padding-top: 0;
+  font-size: 20px;
+  color: black;
+}
+
+.pws4 p a {
+    color:#a1d683;
+}
+
+.pws4 button {
+  color: #fff;
+  background-color: darkcyan;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.pws4 .pws4works {
+  display: flex;
+  flex: 2;
+  max-width: 100%;
+  align-items: center;
+  margin: 30px 0px 50px 0px;
+  padding: 20px;
+}
+
+.pws4 .pws4works .works {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  width: 250px;
+  height: 530px;
+  align-items: center;
+  margin: 30px 20px 50px 20px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.pws4 .pws4works .works .icon {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  left: -65px;
+  bottom: -30px;
+}
+
+.pws4 .pws4works .works > img {
+  height: 266px;
+  max-width: 220px;
+  position: relative;
+left: -15px;
+}
+    
+.pws4 .pws4works .works h3 {
+color: #025157;
+text-align: center;
+width: 80%;
+font-size: 30px;
+font-weight: 800;
+margin-top: 30px;
+margin-bottom: 8px;
+}
+
+.pws4 .pws4works .works p {
+  color:black;
+  text-align: center;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  }
+
+  .pws4 .pws4works .works a {
+    color:#a1d683;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    }
+
+.carousel {
+  width: 400px;
+  margin: 20px auto 20px auto;
 }
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
   .body {
-    width: 100%;
-  }
- .navbar, .actions {
+    margin-left: 0;
+    padding: 0;
+}
+
+ /* .navbar, .actions {
    display: none;
- }
+ } */
+
  h1 {
    font-size: 40px; 
 }
+
 main {
   margin-top: 130px;
 }
@@ -295,24 +528,112 @@ main {
 }
 
 .publish > form > div {
-  height: 50px;
+  height: 100px;
   margin-top: 10px;
 }
 
-.publish > form > div > input {
+.publish > form > div > input > * {
+  background-color: #a1d683;
   width: 65%;
+  border: 0;
+  border-radius: 8px;
 }
 
 .promo {
   flex-direction: column;
-  max-width: 90%;
+  width: 60%;
+  padding: 0px;
+  margin: 50px;
+}
 
+.explanatory-video > video {
+  max-width: 100%;
+}
+
+.publish {
+  margin-top: 10px;
+}
+
+.publish > h3 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.publish > p {
+  line-height: 1.2;
+  max-block-size: 100%;
 }
 
 .feature-cards {
   grid-template: repeat(4, 1fr) / 1fr;
   padding-left: 0;
   padding-right: 0;
+  }
+
+.card {
+  padding: 2%;
+}
+.card-text { 
+  margin: 2px;
+  padding: 0px 0px 10px 30px;
+  line-height: 1.1;
+  font-size: 5px;
+}
+
+.icon {
+  height: 2%;
+  margin-top: 0;
+  padding: 0;
+}
+
+.card-text h2 {
+  font-size: 20px;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.card-text p {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-text a {
+  font-size: 11px;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.card-image {
+  display: none;
+}
+
+.pws4 .pws4works {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+  padding: 20px;
+}
+
+.pws3 {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.growing {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding-right: 0px
+}
+.growing button{
+position: relative;
+right: -70px;
 }
 
 }
