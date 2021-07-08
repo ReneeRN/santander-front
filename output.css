@@ -2,7 +2,7 @@
 /** colores */
 /** fuentes */
 /** placeholders */
-.blog .title {
+.title {
   font-family: "Alegreya", serif;
   color: #135359;
 }
@@ -13,51 +13,82 @@
   max-width: unset;
   padding: 5% 10%;
 }
-.blog .card1 {
+
+.card1 {
   border: 3px;
-  border-color: solid black;
-  box-shadow: #979797;
+  border-radius: 5px;
 }
-.blog .card-title {
+
+.card-title {
   color: #135359;
 }
-.blog .category {
+
+.category {
   color: #67b54b;
 }
-.blog .process-list {
+
+.process-list {
   margin-top: 40px;
   margin-bottom: 36px;
 }
-.blog .process-list .process {
+.process-list .process {
   margin-bottom: 25px;
 }
-.blog .process-list .process > div > h3 {
+.process-list .process > div > h2 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 80px !important;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.process-list .process > div > h3 {
   color: #025157;
   margin-bottom: 0;
   font-size: 30px;
   font-weight: 500;
 }
-.blog .process-list .process > div > p {
-  color: #135359;
+.process-list .process > div > p {
+  color: #135359 !important;
   margin: 0;
   max-width: unset;
+  padding: 0 !important;
 }
-.blog .process-list .process .process-icon {
+
+.process-icon {
   width: 60px;
   height: 60px;
   margin-right: 10px;
   text-align: center;
 }
-.blog .process-list .process .process-icon img {
-  height: 100%;
-}
-.blog button {
+
+button {
   height: auto;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
   padding: 12px;
   width: 180px;
   margin-bottom: 15px;
+  border: 0;
+  background-color: #135359;
+  color: white;
+}
+
+img {
+  height: 100%;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+  .blog .row {
+    display: grid;
+  }
+  .blog .row .col {
+    float: left;
+    width: 90%;
+    padding: 5% 0%;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
