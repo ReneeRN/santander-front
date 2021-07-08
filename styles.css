@@ -135,6 +135,7 @@ margin: 0px;
   margin: 15px 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 10px;
+  color: black !important;
 }
   
 .publish > form > div > button {
@@ -197,7 +198,6 @@ margin: 0px;
   }
 
 .explanatory-text > form input {
-    color: #fff;
     background-color: #ffffff;
     border: 0;
     border-radius: 8px;
